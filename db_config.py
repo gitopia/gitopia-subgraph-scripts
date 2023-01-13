@@ -1,9 +1,9 @@
 import os
 
 db_config = {
-    'dbname': os.environ['DB_NAME'],
-    'user': os.environ['DB_USER'],
+    'user': 'graph-node',
     'password': os.environ['DB_PASSWORD'],
-    'host': os.environ['DB_HOST'],
-    'port': os.environ['DB_PORT']
+    'host': 'localhost',
+    'port': '5432',
+    'options': '-c search_path=sgd10'
 }
